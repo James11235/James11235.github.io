@@ -1,0 +1,181 @@
+/* General Reset for Consistency */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global Body Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #f4f4f4, #e1e1e1); /* Soft gradient background */
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Container Class for Layout Control */
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header Section */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+}
+
+/* Header Title and Subtitle */
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+/* Navigation Styles */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 25px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    color: #ff9800;  /* Adds a pop of color on hover */
+}
+
+/* Section Heading Styles */
+section h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #ddd; /* Adds a clean divider under headings */
+    padding-bottom: 10px;
+}
+
+/* About Section Styles */
+#about p {
+    font-size: 1.2rem;
+    color: #666;
+    line-height: 1.8;
+}
+
+/* Education, Experience, and Skills Sections List Styling */
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+ul li {
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+    color: #444;
+}
+
+h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+/* Education & Experience Paragraphs */
+ul li p {
+    font-size: 1rem;
+    color: #777;
+}
+
+/* Skills Section Styling */
+#skills ul li {
+    font-size: 1.1rem;
+    color: #555;
+    padding: 5px 0;
+}
+
+/* Contact Section Styles */
+#contact p {
+    font-size: 1.2rem;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+#contact a {
+    color: #0066cc;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+#contact a:hover {
+    color: #ff9800;  /* Color change on hover */
+}
+
+/* Footer Styling */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 50px;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+/* Section Hover Effects for 'Alive' Feel */
+section {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 50px 0;
+}
+
+section:hover {
+    transform: translateY(-10px);  /* Lifts the section up */
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);  /* Adds a soft shadow */
+}
+
+/* Responsive Design: Adjustments for Small Screens */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    section h2 {
+        font-size: 2rem;
+    }
+
+    #about p, #contact p {
+        font-size: 1rem;
+    }
+}
